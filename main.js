@@ -33,11 +33,23 @@
 // strings, number, boolean, null, undefined
 
 //concatenation
-const name = 'John';
-const age = 25;
-console.log('My name is ' + name + ' and I am ' + age);
+//const name = 'John';
+//const age = 25;
+
+//console.log('My name is ' + name + ' and I am ' + age);
 
 //template strings
-console.log(`My name is ${name} and I am ${age}`);
+//console.log(`My name is ${name} and I am ${age}`);
 //string methods
-const s= 'Hello World';
+//const s= 'Hello World';
+//console.log(s.toUpperCase());
+
+// arrays - variables that hold multiple values
+//const numbers = new Array(1,2,3,4,5);
+const fruits = ['apples', 'oranges', 'pears'];
+fruits[3] = 'grapes';
+fruits.push('mangos');
+fruits.unshift('strawberries');
+fruits.pop();
+console.log(fruits);
+console.log(Array.isArray(fruits));
