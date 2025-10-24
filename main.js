@@ -109,3 +109,30 @@ while(i < 10) {
     console.log(`While loop iteration: ${i}`);
    i++;
 }
+//looping through arrays
+for(let i = 0; i < todos.length; i++) {
+    console.log(todos[i].text);
+}
+//for..of loop
+for(let todo of todos) {
+    console.log(todo.text);
+}
+
+//forEach, map, filter
+todos.forEach(function(todo) {
+    console.log(todo.text);
+});
+const todoText = todos.map(function(todo) {
+    return todo.text;
+});
+console.log(todoText);
+//mapping to get array of ids
+const todoIds = todos.map(function(todo) {
+    return todo.id;
+});
+console.log(todoIds);
+//filter
+const todoCompleted = todos.filter(function(todo) {
+    return todo.isCompleted;
+});
+console.log(todoCompleted);
