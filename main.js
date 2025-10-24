@@ -46,10 +46,66 @@
 
 // arrays - variables that hold multiple values
 //const numbers = new Array(1,2,3,4,5);
-const fruits = ['apples', 'oranges', 'pears'];
+/*const fruits = ['apples', 'oranges', 'pears'];
 fruits[3] = 'grapes';
 fruits.push('mangos');
 fruits.unshift('strawberries');
 fruits.pop();
 console.log(fruits);
 console.log(Array.isArray(fruits));
+// object literals
+const person = {
+    firstName: 'John',
+    lastName: 'Doe',
+    age: 30,
+    //adding array inside object
+    hobbies: ['reading', 'traveling', 'swimming'],
+    //adding nested object
+    address: {
+        street: '123 Main St',
+        city: 'Anytown',
+        state: 'CA'
+    }
+};
+//console.log(person, person.firstName, person.hobbies[1]);
+console.log(person.hobbies[1]);
+
+const { firstName, lastName, address: { city } } = person;
+console.log(firstName, city);
+//adding property to object
+person.email = 'john.doe@example.com';
+console.log(person);
+*/
+//arrays of objects
+const todos = [
+    {
+        id: 1, 
+        text: 'Take out trash',
+        isCompleted: true
+    },
+    {
+        id: 2, 
+        text: 'Meeting with boss',
+        isCompleted: true
+    },
+    {
+        id: 3, 
+        text: 'Dentist appointment',
+        isCompleted: false
+    }
+];  
+console.log(todos);
+
+//JSON
+const todoJSON = JSON.stringify(todos);
+console.log(todoJSON);
+//for loop
+for(let i = 0; i < 10; i++) {
+    console.log(`For loop iteration: ${i}`);
+}
+//while loop
+let i = 0;
+while(i < 10) {
+    console.log(`While loop iteration: ${i}`);
+   i++;
+}
