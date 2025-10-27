@@ -22,10 +22,16 @@ function Person (firstname, lastname, dob) {
     this.firstname = firstname;
     this.lastname = lastname;
     this.dob = dob;
+    this.dob = new Date(dob);
+    this.getBirthYear = function() {
+        return this.dob.getFullYear();
+    }
 
 }
 
 // instantiate object
 const person1 = new Person ('John', 'Doe', '1990-01-01');
 const person2 = new Person ('Dewan', 'Mahmud', '1992-02-02');
-console.log(person2.dob);
+console.log(person2);
+console.log(person1.getBirthYear());
+console.log(person2.getBirthYear());
